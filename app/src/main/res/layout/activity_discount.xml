@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/deep_magenda"
+    android:backgroundTint="#800F0E0E"
+    android:backgroundTintMode="src_over"
+    tools:context=".discount">
+
+
+    <TextView
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="70sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/disTitle"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:fontFamily="@font/sassooninfantrgregular"
+
+        />
+
+
+
+    <LinearLayout
+        android:layout_marginBottom="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:text="@string/prTitle"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:fontFamily="@font/sassooninfantrgregular"
+            />
+
+        <EditText
+            android:id="@+id/orginalprice"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:gravity="end"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sassooninfantrgregular"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginBottom="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:text="@string/disoff"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:fontFamily="@font/sassooninfantrgregular"
+            />
+
+        <EditText
+            android:id="@+id/discountamount"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:gravity="end"
+            android:maxLength="2"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sassooninfantrgregular"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:text="@string/finalprice"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:fontFamily="@font/sassooninfantrgregular"
+            />
+
+        <TextView
+            android:id="@+id/finalprice"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sassooninfantrgregular"
+            android:gravity="center"
+            android:textSize="25sp"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/savetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sassooninfantrgregular"
+        />
+
+    <Button
+
+        android:layout_marginTop="60sp"
+        android:id="@+id/calcdiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Calculate"
+        android:background="@drawable/rounded_corner_btn"
+        android:fontFamily="@font/sassooninfantrgregular"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:onClick="discalculate"
+
+        />
+
+</LinearLayout>

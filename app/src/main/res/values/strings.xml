@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Tools</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- The BMI Text -->
+    <string name="bmiTitle">BMI Calculator</string>
+    <string name="bmiGenderTitle">I\'m ....</string>
+    <string name="bmiAgeTitle">My age ...</string>
+    <string name="bmiHeight">My Height is ...</string>
+    <string name="bmiWeight">My Weight is ...</string>
+    <string name="bmiBtnTitle">My BMI is ...</string>
+
+    <!-- The Discount Text -->
+    <string name="disTitle">Discount Calculate</string>
+    <string name="prTitle">Original Price</string>
+    <string name="disoff">Discount (% off)</string>
+    <string name="finalprice">Final Price</string>
+
+    <!-- The Percentage Text -->
+    <string name="percentTitle">Percentage Calculate</string>
+    <string name="percentnum">Number</string>
+    <string name="peramount">Percentage (%)</string>
+    <string name="valuepercent">Value</string>
+
+    <!-- The Date Text -->
+    <string name="dateTitle">Date Calculator</string>
+    <string name="startdate">Start Date</string>
+    <string name="enddate">End Date</string>
+
+    <!-- The Age Text -->
+    <string name="ageTitle">Age Calculator</string>
+    <string name="birth">Birth Date</string>
+    <string name="today">Today\'s Date</string>
+
+
+    <!-- The Length Text -->
+    <string name="lengthTitle">Length Calculator</string>
+
+
+</resources>

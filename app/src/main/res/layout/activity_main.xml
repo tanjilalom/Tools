@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="30sp"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="120sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="80sp"
+            android:src="@drawable/tools" />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginBottom="50sp">
+
+
+        <LinearLayout
+            android:layout_margin="10sp"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/calculatorbtn"
+                android:layout_width="match_parent"
+                android:layout_height="90sp"
+                android:src="@drawable/calculator"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculator"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10sp"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/alarmbtn"
+                android:layout_width="match_parent"
+                android:layout_height="90sp"
+                android:src="@drawable/alarm"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alarm"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10sp"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/converterbtn"
+                android:layout_width="match_parent"
+                android:layout_height="90sp"
+                android:src="@drawable/converter"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Converter"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <LinearLayout
+            android:layout_margin="10sp"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/calendarbtn"
+                android:layout_width="match_parent"
+                android:layout_height="90sp"
+                android:src="@drawable/calender"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calender"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10sp"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/compassbtn"
+                android:layout_width="match_parent"
+                android:layout_height="90sp"
+                android:src="@drawable/compass"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Compass"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10sp"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/qrcodebtn"
+                android:layout_width="match_parent"
+                android:layout_height="90sp"
+                android:src="@drawable/qrcode"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QR Code Scanner"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

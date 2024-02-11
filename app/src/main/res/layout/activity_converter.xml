@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".converter">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="10sp">
+
+
+                <LinearLayout
+                    android:layout_margin="10sp"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/numericalbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="90sp"
+                        android:src="@drawable/numerical"
+                        android:onClick="numclick"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Numerical System"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="10sp"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/lengthbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="90sp"
+                        android:src="@drawable/ruler"
+                        android:onClick="lengthclick"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Length"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="10sp"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imagepdfbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="90sp"
+                        android:src="@drawable/imagepdf"
+                        android:onClick="imgpdfclick"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Image to PDF"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginBottom="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <LinearLayout
+                    android:layout_margin="10sp"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/bmibtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="90sp"
+                        android:src="@drawable/bmi"
+                        android:onClick="bmiclick"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BMI"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="10sp"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/discountbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="90sp"
+                        android:src="@drawable/discount"
+                        android:onClick="dicountclick"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Discount"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="10sp"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/percentbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="90sp"
+                        android:src="@drawable/percent"
+                        android:onClick="percentclick"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Percent"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="10sp">
+
+
+                <LinearLayout
+                    android:layout_margin="10sp"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/databtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="90sp"
+                        android:src="@drawable/date"
+                        android:onClick="dateclick"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="10sp"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/areabtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="90sp"
+                        android:src="@drawable/area"
+                        android:onClick="areaclick"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Area"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="10sp"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/volumebtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="90sp"
+                        android:onClick="volclick"
+                        android:src="@drawable/measure" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Volume"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="10sp">
+
+
+                <LinearLayout
+                    android:layout_margin="10sp"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/temperaturebtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="90sp"
+                        android:src="@drawable/temperature"
+                        android:onClick="tempclick"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Temperature"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="10sp"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90sp"
+                        android:src="@drawable/speed"
+                        android:onClick="speedclick"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Speed"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="10sp"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/converterbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="90sp"
+                        android:src="@drawable/mass"
+                        android:onClick="massclick"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mass"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="10sp">
+
+
+                <LinearLayout
+                    android:layout_margin="10sp"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/timebtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="90sp"
+                        android:src="@drawable/hourglass"
+                        android:onClick="timeclick"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Time"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="10sp"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/agebtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="90sp"
+                        android:src="@drawable/age"
+                        android:onClick="ageclick"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Age"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="10sp"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/energybtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="90sp"
+                        android:src="@drawable/energy"
+                        android:onClick="energyclick"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Energy"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="10sp">
+
+
+                <LinearLayout
+                    android:layout_margin="10sp"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/resistancebtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="90sp"
+                        android:src="@drawable/resistance"
+                        android:onClick="resistanceclick"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Resistance"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

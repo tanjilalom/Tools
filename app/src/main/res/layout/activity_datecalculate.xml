@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/deep_magenda"
+    android:backgroundTint="#800F0E0E"
+    android:backgroundTintMode="src_over"
+    tools:context=".datecalculate">
+
+    <TextView
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="70sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dateTitle"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:fontFamily="@font/sassooninfantrgregular"
+
+        />
+
+
+    <LinearLayout
+        android:layout_marginBottom="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:text="@string/startdate"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:fontFamily="@font/sassooninfantrgregular"
+            />
+
+        <Button
+            android:id="@+id/startdate"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:background="@android:color/transparent"
+            android:text="01/01/2021"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sassooninfantrgregular"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:text="@string/enddate"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:fontFamily="@font/sassooninfantrgregular"
+            />
+
+        <Button
+            android:id="@+id/enddate"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:background="@android:color/transparent"
+            android:text="01/01/2021"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sassooninfantrgregular"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/date_calc"
+        android:layout_marginTop="50sp"
+        android:layout_marginBottom="60sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Calculate"
+        android:background="@drawable/rounded_corner_btn"
+        android:fontFamily="@font/sassooninfantrgregular"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:onClick="datecalc"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="0 Years | 0 Months | 0 Days"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sassooninfantrgregular"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
